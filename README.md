@@ -32,7 +32,6 @@ LIDA treats _**visualizations as code**_ and provides a clean api for generating
 - [x] Infographic Generation (beta) # pip install lida[infographics]
 
 ```python
-
 from lida import Manager, llm
 
 lida = Manager(text_gen = llm("openai")) # palm, cohere ..
@@ -121,7 +120,6 @@ Given a visualization, edit the visualization using natural language.
 # modify chart using natural language
 instructions = ["convert this to a bar chart", "change the color to red", "change y axes label to Fuel Efficiency", "translate the title to french"]
 edited_charts = lida.edit(code=code,  summary=summary, instructions=instructions, library=library, textgen_config=textgen_config)
-
 ```
 
 ### Visualization Explanation
